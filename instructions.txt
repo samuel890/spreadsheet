@@ -1,0 +1,12 @@
+You could import Spreadsheet into Eclipse and package it as Spreadsheet.jar file and run it in terminal
+
+1.After you import Spreadsheet project into Eclipse, choose "File"-->"Export", then choose "JAR file", click "Next".
+
+2. Choose Spreadsheet to export and specified jar file name as "Spreadsheet.jar" and click "Next". It will show JAR Packaging Options, select "Export class files with compile error" and "Export class files with compile warnings" and "Next".
+
+3 Generate the manifest file if not created. In "Manifest file" field enter "/Spreadsheet/Manifest.txt". Then choose the "Main Class" with "Spreadsheet" as entry main class. After that, hit "Finish", it will generate Spreadsheet.jar file in the directory you specified.
+
+4 Open terminal and go to Spreadsheet.jar directory, enter commands like below:
+ "java -jar Spreadsheet.jar /parent/child/input.csv /parent/child/output.csv" it will give you output.csv file under /parent/child directory.
+ 
+ 
